@@ -5,7 +5,7 @@ FROM nginx:1
 COPY mime.types /etc/nginx/
 COPY nginx.conf /etc/nginx/nginx.conf
 
-RUN rm -rf /etc/nginx/conf.d/default
+RUN rm -rf /etc/nginx/conf.d/default.conf
 
 VOLUME ["/etc/nginx/conf.d", "/var/cache/nginx"]
 
